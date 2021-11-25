@@ -1,0 +1,19 @@
+{
+  "name": "devops-endwapj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellingtonapj/devops-endwapj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wellingtonapj/devops-endwapj/issues"
+  },
+  "homepage": "https://github.com/wellingtonapj/devops-endwapj#readme"
+}
