@@ -9,8 +9,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:            
       - name: executa comando
-<<<<<<< HEAD
-        run: echo "Configuração inicial do pipeline"
-=======
-        run: echo "Configuração inicial do pipeline"
->>>>>>> fcb8f6b81256cf58aefa4735c979aeded914eb31
