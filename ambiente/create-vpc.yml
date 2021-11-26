@@ -16,11 +16,8 @@
   tasks:
   - name: configura bibliotecas Python
     import_tasks: setup-python.yml
-<<<<<<< HEAD
 
-=======
->>>>>>> 6d8c52fc6bb8452ef08ea8940f8008011123514a
- - name: Criação de VPC
+  - name: Criação de VPC
     ec2_vpc_net:
       region: "{{ aws_region }}"
       name: "{{ vpc_name }}" 
@@ -32,7 +29,7 @@
         Name: "{{ vpc_name }}"
     register: vpc_result
 
- - name: Criação de subnet
+  - name: Criação de subnet
     ec2_vpc_subnet:
       region: "{{ aws_region }}"
       az: "{{ aws_availability_zone }}"
@@ -43,7 +40,7 @@
         Name: "{{ subnet_name }}"
     register: subnet_result
 
- - name: Criação de internet gateway       
+  - name: Criação de internet gateway       
     ec2_vpc_igw:
       region: "{{ aws_region }}"
       vpc_id: "{{ vpc_result.vpc.id }}"      
@@ -51,7 +48,7 @@
         Name: "{{ igw_name }}"
     register: igw_result
 
- - name: Criação de route table
+  - name: Criação de route table
     ec2_vpc_route_table:
       region: "{{ aws_region }}"
       vpc_id: "{{ vpc_result.vpc.id }}"      
@@ -63,7 +60,7 @@
           gateway_id: "{{ igw_result.gateway_id }}"      
     register: public_route_table
 
- - name: Criação de security group
+  - name: Criação de security group
     ec2_group:
       region: "{{ aws_region }}"
       vpc_id: "{{ vpc_result.vpc.id }}"
@@ -86,5 +83,6 @@
 
   - name: Registro do id da subnet
     add_host:
-        name: "virtual_host"
-        subnet_id: "{{ subnet_result.subnet.id }}"
+      name: "virtual_host"
+      subnet_id: "{{ subnet_result.subnet.id }}"
+      
