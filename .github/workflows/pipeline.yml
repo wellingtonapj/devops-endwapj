@@ -22,7 +22,7 @@ jobs:
         name: deploy
         path: frontend/build  
 
-copyToBucket:
+  copyToBucket:
     runs-on: ubuntu-latest
     needs: build
     env:
