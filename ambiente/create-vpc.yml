@@ -16,7 +16,10 @@
   tasks:
   - name: configura bibliotecas Python
     import_tasks: setup-python.yml
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6d8c52fc6bb8452ef08ea8940f8008011123514a
  - name: Criação de VPC
     ec2_vpc_net:
       region: "{{ aws_region }}"
