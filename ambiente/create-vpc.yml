@@ -85,3 +85,4 @@
     add_host:
       name: "virtual_host"
       subnet_id: "{{ subnet_result.subnet.id }}"
+      
