@@ -1,4 +1,4 @@
- ---
+---
 - name: Criação de VPC, Subnet, Internet gateway, Route table, Security group
   hosts: localhost
   connection: local
