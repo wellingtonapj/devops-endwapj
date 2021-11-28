@@ -17,7 +17,7 @@
       import_tasks: setup-python.yml
 
 ---
- - name: Criação e registro de pares de chave
+- name: Criação e registro de pares de chave
   hosts: localhost
   connection: local
   gather_facts: false
