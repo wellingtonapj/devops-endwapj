@@ -1,10 +1,10 @@
 ---
  - name: Criação e registro de pares de chave
-  hosts: localhost
-  connection: local
-  gather_facts: false
-  become: true
-  vars_files:
+   hosts: localhost
+   connection: local
+   gather_facts: false
+   become: true
+   vars_files:
     - vars/global.yml
 
   environment:
