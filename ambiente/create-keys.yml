@@ -16,7 +16,6 @@
     - name: configura bibliotecas Python
       import_tasks: setup-python.yml
 
----
 - name: Criação e registro de pares de chave
   hosts: localhost
   connection: local
