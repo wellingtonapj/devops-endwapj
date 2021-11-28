@@ -22,7 +22,7 @@
       import_tasks: setup-python.yml
 
 - name: Provisionamento de instância
-      community.aws.ec2_instance:
+        community.aws.ec2_instance:
         region: "{{ aws_region }}"
         vpc_subnet_id: "{{ subnet_id }}"
         name: "{{ instance_name }}"
