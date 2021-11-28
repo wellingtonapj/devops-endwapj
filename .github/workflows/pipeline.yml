@@ -37,4 +37,4 @@ jobs:
         name: package
         path: frontend/build
     #- run: aws s3 sync frontend/build s3://devops-endwapj --acl public-read --delete
-    - run: ansible-playbook ambiente/upload_to_s3.yml
+    #- run: ansible-playbook ambiente/upload_to_s3.yml
